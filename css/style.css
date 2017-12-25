@@ -257,7 +257,7 @@ ul.left-menu3 li a i {
   overflow: hidden;
   overflow-y: scroll;
   margin-left: -3px;
-  margin-right: -5px;
+  margin-right: -4px;
 }
 i.im.im-magnifier.search-mail {
   font-size: 15px;
@@ -386,7 +386,7 @@ span.blue-dot {
   vertical-align: middle;
 }
 .grid2-view p {
-  font-size: 14px;
+  font-size: 13px;
 }
 /* //Grid-2 */
 /* Grid-3 */
@@ -398,6 +398,7 @@ span.blue-dot {
   border-left: 1px solid #d4cece;
   border-right: 1px solid #d4cece;
   height: 800px;
+  overflow-y: scroll;
 
 }
 .subject-nav {
@@ -496,7 +497,7 @@ i.im.im-paper-clip {
   bottom: 100%;
   left: 5%;
   margin-left: 0px;
-  border-width: 15px;
+  border-width: 13px;
   border-style: solid;
   border-color: transparent transparent white transparent;
 }
