@@ -138,7 +138,7 @@ i.im.im-angle-down {
   letter-spacing: 1px;
   background: #fff;
   overflow-y: auto;
-  height: calc(100vh - 76px );
+  height: calc(100vh - 80px );
 }
 a.compose-btn {
   padding: 10px 23px;
@@ -284,7 +284,7 @@ p.sort-mail {
 /* mail box */
 .mail-box-container {
     overflow-y: auto;
-    height: calc(100vh - 76px - 87px);
+    height: calc(100vh - 80px - 87px);
 }
 .mail-box {
   margin: 15px 0px;
@@ -422,7 +422,7 @@ p.previous-mails {
 }
 .full-mail-container {
     overflow-y: auto;
-    height: calc(100vh - 76px - 120px);
+    height: calc(100vh - 80px - 120px);
 }
 .full-mail {
   background: #fff;
@@ -573,7 +573,7 @@ i.im.im-paper-clip {
   text-align: center;
   padding: 20px 10px;
   overflow-y: auto;
-  height: calc(100vh - 75px - 70px );
+  height: calc(100vh - 79px - 70px );
   vertical-align: top;
 }
 .friends-list img {
@@ -591,7 +591,7 @@ i.im.im-paper-clip {
   font-weight: 100;
   padding-top: 20px;
   overflow-y: auto;
-  height: calc(100vh - 75px - 70px - 68px);
+  height: calc(100vh - 79px - 70px - 68px);
 }
 .my-msg {
   width: 76%;
