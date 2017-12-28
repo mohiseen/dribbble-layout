@@ -61,6 +61,7 @@ a:focus, a:hover {
 .part1 {
   width: calc( 100% - 258px );
   float: left;
+      height: 100vh;
 }
 .logo img {
   width: 30px;
@@ -136,7 +137,8 @@ i.im.im-angle-down {
   width: 190px;
   letter-spacing: 1px;
   background: #fff;
-  height: 800px;
+  overflow-y: auto;
+  height: calc(100vh - 76px );
 }
 a.compose-btn {
   padding: 10px 23px;
@@ -250,12 +252,7 @@ ul.left-menu3 li a i {
   display: inline-block;
   vertical-align: top;
   padding: 15px;
-  /* border-left: 1px solid #d4cece; */
-  /* border-right: 1px solid #d4cece; */
-  max-height: 800px;
-  scroll-behavior: auto;
-  overflow: hidden;
-  overflow-y: scroll;
+  padding-bottom: 0px;
   margin-left: -3px;
   margin-right: -4px;
 }
@@ -282,8 +279,13 @@ p.sort-mail {
   display: inline-block;
   width: 84%;
   text-align: right;
+      margin-bottom: 10px;
 }
 /* mail box */
+.mail-box-container {
+    overflow-y: auto;
+    height: calc(100vh - 76px - 87px);
+}
 .mail-box {
   margin: 15px 0px;
   background: #fff;
@@ -397,9 +399,6 @@ span.blue-dot {
   background-color: #eaedec;
   border-left: 1px solid #d4cece;
   border-right: 1px solid #d4cece;
-  height: 800px;
-  overflow-y: scroll;
-
 }
 .subject-nav {
   padding: 20px 20px 15px;
@@ -420,6 +419,10 @@ h2.subject a {
 p.previous-mails {
   text-align: center;
   margin: 25px 0px;
+}
+.full-mail-container {
+    overflow-y: auto;
+    height: calc(100vh - 76px - 120px);
 }
 .full-mail {
   background: #fff;
@@ -483,6 +486,7 @@ i.im.im-paper-clip {
   border-radius: 10px;
   padding: 20px;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 .reply-forward i.im.im-paper-clip {
   float: right;
@@ -505,6 +509,7 @@ i.im.im-paper-clip {
 /* Grid-4 */
 .part2 {
   float: right;
+      height: 100vh;
 }
 .open-close {
   padding: 27px 10px;
@@ -530,7 +535,6 @@ i.im.im-paper-clip {
   display: inline-block;
   width: 258px;
   vertical-align: top;
-  height: 800px;
 }
 .messenger-grid img {
   width: 40px;
@@ -568,7 +572,9 @@ i.im.im-paper-clip {
   background-color: #fff;
   text-align: center;
   padding: 20px 10px;
-  height: 730px;
+  overflow-y: auto;
+  height: calc(100vh - 75px - 70px );
+  vertical-align: top;
 }
 .friends-list img {
   margin: 20px 0px;
@@ -583,7 +589,9 @@ i.im.im-paper-clip {
   color: #fff;
   font-size: 14px;
   font-weight: 100;
-  vertical-align: bottom;
+  padding-top: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 75px - 70px - 68px);
 }
 .my-msg {
   width: 76%;
@@ -668,13 +676,19 @@ span.load3 {
   padding: 2px;
   margin: 0px 7px;
 }
-.friends-msg .text-input {
+.type-text {
+    display: inline-block;
+    float: right;
+    width: 76%;
+    margin-top: -67px;
+}
+.type-text .text-input {
   padding: 15px 0px;
   background: #ced0cf;
   position: relative;
 }
-.friends-msg .text-input input[type="text"] {
-  width: 150px;
+.type-text .text-input input[type="text"] {
+  width: 165px;
   outline: none;
   color: black;
   margin-left: 19px;
